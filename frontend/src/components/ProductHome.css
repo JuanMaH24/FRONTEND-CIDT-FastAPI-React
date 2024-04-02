@@ -1,0 +1,79 @@
+.Navbar {
+    background-color: #3d5a80;
+    color: white;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+  }
+
+.Navbar-left{
+  text-decoration: none;
+  color: white;
+}
+
+.Navbar-left:hover{
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.modal-nav-link:hover{
+  color: #3d5a80;
+  text-decoration: underline;
+}
+
+
+.plus-button-icon{
+  font-size: 35px;
+}
+
+.error-robot-icon{
+  font-size: 100px;
+}
+
+.plus-button{
+  position: fixed;
+  padding: 10px;
+  border-radius: 50%;
+  color:aliceblue;
+  background-color: #ee6c4d;
+  bottom: 20px; /* Cambia el valor según la posición deseada */
+  right: 20px; /* Cambia el valor según la posición deseada */
+  z-index: 1500; /* Asegura que esté sobre otros elementos */
+}
+
+.plus-button:hover{
+  transform: translate(-5px, -5px);
+  color: lightgray;
+  background-color: #ec5f4f;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover{
+  transform: translate(-5px, -5px);
+  transition: all 0.3s ease;
+}
+  
+.content {
+  padding: 20px;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%; /* Ancho máximo de la imagen igual al ancho del contenedor */
+  height: auto; /* Altura automática para mantener la relación de aspecto */
+  object-fit: cover; /* La imagen se ajusta para contener todo el contenido sin distorsión */
+  object-position: center center;
+}

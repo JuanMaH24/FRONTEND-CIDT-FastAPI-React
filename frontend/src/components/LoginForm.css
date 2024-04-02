@@ -1,0 +1,103 @@
+.login-main-container{
+    background: #e0fbfc;
+}
+
+.wrapper {
+    width: 60%;
+    height: 80%; 
+    background: #293241;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.glass-icon-login{
+    margin: auto;
+    margin: 30px 0;
+    font-size: 80px;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+    padding-left: 20px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.wrapper button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+
+.login-img-container{
+    height: 100 vh;
+    overflow: hidden;
+}
+
+.login-img-container img{
+    height: 100%; 
+    width: auto; 
+    object-fit: contain;
+    opacity: 0.8;
+    filter: blur(2px);
+    animation: enfocar-desenfocar 2s infinite alternate; /* Aplica la animación */
+}
+
+.login-img-container img:hover{
+    opacity: 1;
+    filter: blur(0);
+}
+
+@keyframes enfocar-desenfocar {
+  0% {
+    filter: blur(2px); /* Inicio de la animación: desenfoque */
+  }
+  50% {
+    filter: blur(0); /* Mitad de la animación: enfoque */
+  }
+  100% {
+    filter: blur(2px); /* Fin de la animación: desenfoque */
+  }
+}
